@@ -269,6 +269,54 @@ ul {
 
 /* Global Classes END */
 
+/* Media Query START */
+
+/* For Large Screen SM (640px) */
+@media (min-width: 640px) {
+
+}
+
+/* For Large Screen MD (768px) */
+@media (min-width: 768px) {
+    
+}
+
+/* For Large Screen LG (1024px) */
+@media (min-width: 1024px) {
+    #nav .toggle-btn > button {
+        display: none;
+    }
+
+    #nav {
+        flex-direction: row !important;
+    }
+
+    .collapse {
+        max-height: initial !important;
+    }
+
+    .collapse ul {
+        flex-direction: row !important;
+    }
+
+    .active {
+        max-height: 100% !important;
+    }
+}
+
+/* For Large Screen XL (1280px) */
+@media (min-width: 1280px) {
+    #nav {
+        background: transparent !important;
+    }
+
+    #nav .flex-initial ul button {
+        display: inline-block !important;
+    }
+}
+
+/* Media Query END */
+
 /* Navigation START */
 
 #nav {
