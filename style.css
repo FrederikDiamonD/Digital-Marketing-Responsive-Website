@@ -273,16 +273,28 @@ ul {
 
 /* For Large Screen SM (640px) */
 @media (min-width: 640px) {
-
+    .container {
+        max-width: 640px;
+    }
+    
+    .sm-text-xl {
+        font-size: 3em;
+    }
 }
 
 /* For Large Screen MD (768px) */
 @media (min-width: 768px) {
-    
+    .container {
+        max-width: 768px;
+    }
 }
 
 /* For Large Screen LG (1024px) */
 @media (min-width: 1024px) {
+    .container {
+        max-width: 1024px;
+    }
+    
     #nav .toggle-btn > button {
         display: none;
     }
@@ -306,6 +318,10 @@ ul {
 
 /* For Large Screen XL (1280px) */
 @media (min-width: 1280px) {
+    .container {
+        max-width: 1280px;
+    }
+    
     #nav {
         background: transparent !important;
     }
@@ -367,3 +383,21 @@ ul {
 }
 
 /* Navigation END */
+
+/* Banner Area START */
+
+#site-main .banner-area {
+    width: 100%;
+    position: relative;
+    background: var(--bg-cover) no-repeat;
+    background-position-x: right;
+    z-index: -99;
+}
+
+#site-main .banner-title {
+    height: 95vh;
+    padding-top: 16rem;
+
+}
+
+/* Banner Area END */
