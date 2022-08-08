@@ -268,3 +268,54 @@ ul {
 }
 
 /* Global Classes END */
+
+/* Navigation START */
+
+#nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem 1.5rem;
+    background: var(--text-light);
+    flex-direction: column;
+}
+
+#nav .collapse {
+    max-height: 0px;
+    overflow-y: hidden;
+
+    /* Animation */
+    transition: all 0.9s ease;
+}
+
+#nav .collapse ul {
+    flex-direction: column;
+    text-align: center;
+    padding: 0 3em;
+}
+
+#nav .collapse ul > li {
+    padding: 0 1.5rem;
+    line-height: 3rem;
+    font-size: 1.1em;
+}
+
+#nav .toggle-btn > button {
+    color: var(--text-dark-2);
+    font-size: 2em;
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 1rem;
+}
+
+#nav .flex-initial ul button {
+    display: none;
+}
+
+.active {
+    max-height: 50vh !important;
+}
+
+/* Navigation END */
