@@ -300,6 +300,10 @@ ul {
     .md-mx-initial {
         margin: initial;
     }
+
+    .md-cols-2 {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
 }
 
 /* For Large Screen LG (1024px) */
@@ -334,6 +338,10 @@ ul {
     
     .lg-cols-3 {
         grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .lg-cols-4 {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
     }
 }
 
@@ -553,3 +561,42 @@ ul {
 }
 
 /* Ready Area END */
+
+/* Footer START */
+
+#footer {
+    border-top: 2px solid var(--text-light);
+    margin-top: 8em;
+}
+
+#footer .grid {
+    column-gap: 3em;
+    padding: 6em 0;
+    border-bottom: 2px solid var(--text-light);
+}
+
+#footer .grid input.subscribe-input {
+    font-size: 1em;
+    font-family: var(--font-poppins);
+    color: var(--text-dark-2);
+    background-color: var(--text-light);
+    padding: 1em;
+    border: none;
+}
+
+#footer .grid input.subscribe-input:focus {
+    outline: none;
+}
+
+#footer .grid button.btn-go {
+    font-family: var(--font-poppins);
+    background-color: var(--text-light);
+    padding: 0 2em;
+}
+
+#footer .grid button.btn-go:hover {
+    color: var(--text-white);
+    background-color: var(--text-dark-2);
+}
+
+/* Footer END */
