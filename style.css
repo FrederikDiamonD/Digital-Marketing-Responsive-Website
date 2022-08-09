@@ -318,6 +318,8 @@ ul {
 
     #nav {
         flex-direction: row !important;
+        padding-left: 6rem !important;
+        padding-right: 6rem !important;
     }
 
     .collapse {
